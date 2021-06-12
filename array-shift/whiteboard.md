@@ -7,21 +7,24 @@ Input: list of n elements and separate value Output:list and separate value in t
 
 Edge cases: Empty array Null Not an array
 
-Visulization
+
+## Visulization
 Input [2,4,6,-8], 5 Output [2,4,5,6,-8]
 
 Input [42,8,15,23,42], 16 Output [42,8,15,16,23,42]
 
-Big-O:
+## Big-O:
 O(N) linear relation.
 
-Algortihm:
+## Algortihm:
 define a function that take a list and number as an arguments then we check if the length of array is even then specific the middle of the list also do that even the length is odd then we put the number at the middle.
 
-Pseudo Code
+
+## Pseudo Code
 define function(list and number) if the Modulus of the lenght and 2 equal zero then middle will be Floor division for the lenght and 2 else the middle will be Floor division for the lenght and 2 + 1 then insert the number in the middle by use the middle as index number.
 
-Code
+
+## Code
 def insert_shift_array(list, num):
 
 if len(list) % 2 == 0:
@@ -30,7 +33,9 @@ else:
     middle = ( len(list) // 2 )+ 1    
 list[middle] = [num]
 return list
-Verification
+
+
+## Verification
 In: a =[2,4,6,-8], 5 expected Out: [2,4,5,6,-8]
 
 def insert_shift_array(a, 5):
