@@ -4,4 +4,4 @@
 
 2. [array shift](https://github.com/layanabushaweesh/data-structures-and-algorithms-401/tree/main/array-shift)
 
-2. [array binary search](https://github.com/layanabushaweesh/data-structures-and-algorithms-401/tree/main/array-binary-search)
+3. [array binary search](https://github.com/layanabushaweesh/data-structures-and-algorithms-401/tree/main/array-binary-search)
