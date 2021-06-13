@@ -7,3 +7,5 @@
 3. [array binary search](https://github.com/layanabushaweesh/data-structures-and-algorithms-401/tree/main/array-binary-search)
 
 4. [linked list](https://github.com/layanabushaweesh/data-structures-and-algorithms-401/blob/main/Data-Structures/linked_list/READEME.md)
+
+5. [linked list insertions]()
