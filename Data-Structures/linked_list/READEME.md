@@ -24,5 +24,11 @@ and create many methods in the linked list class.
 3. includes function :
  which take any value as an argument and Return T/F if value is in the linked list or not
 
-3. str function :
+4. str function :
  which dose not take an arguments and returns a string representing all the value in the Linked List.
+
+5. insert_before function :
+  this function will add new value befor spicific place
+
+6.  insert_after function :
+  this function will add new value after spicific place
