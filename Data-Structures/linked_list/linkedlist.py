@@ -1,5 +1,5 @@
 #Create a Node class that has properties for the value stored in the Node, and a pointer to the next Node.
-from typing import Counter
+from typing import Counter, cast
 
 
 class Node:
@@ -62,7 +62,7 @@ class LinkedList:
          current=current.next
      return output_string 
 
-     
+     ######## code challange 6 ##########
     def append(self, value):
         """
         Adds a node of a value to the 
@@ -78,6 +78,58 @@ class LinkedList:
             while current.next:
                 current=current.next
             current.next=node
+
+    def insert_before(self,value,new_value):
+
+        """
+        input                               arguments            output
+        head -> [1] -> [3] -> [2] -> X   	3, 5	             head -> [1] -> [5] -> [3] -> [2] -> X
+
+        this function will add new value befor spicific place
+
+        """
+        node = Node(new_value)
+
+        current=self.head
+
+        if current.new_value == value:
+            self.insert(new_value)
+
+        else :
+            while current.next.new_value != value:
+                  current=current.next
+
+            else:
+
+                node.next=current.next
+                current.next=node
+            
+    def insert_after(self, value, new_value):
+
+        """
+
+        input                                  arguments         output
+        head -> [1] -> [3] -> [2] -> X      	3, 5	          head -> [1] -> [3] -> [5] -> [2] -> X
+        
+        this function will add new value after spicific place
+
+        """
+        node =  Node(new_value)
+
+        current=self.head
+
+        while current:
+
+         if current.value == value:
+            node.next=current.next
+            current.next = node
+
+            break
+         current=current.next
+
+
+   
+
 
 
 if __name__ == "__main__":
