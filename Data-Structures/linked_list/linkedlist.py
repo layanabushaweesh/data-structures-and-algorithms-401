@@ -128,6 +128,32 @@ class LinkedList:
          current=current.next
 
 
+ ######## code challange 8 ##########
+def zipLists(list1,list2):
+    
+    if not (list1 and list2) :
+        # check the list is exists
+        return list1 
+    
+    output_list =LinkedList()
+    #get the head of each list
+    value_one =list1.head
+    value_two =list2.head
+    #append value one the value two in a loop
+    while value_one:
+        output_list.append(value_one.value)
+        if value_two:
+            output_list.append(value_two.value)
+            value_two = value_two.next
+        value_one= value_one.next
+    while value_two :
+        output_list.append(value_two.value)
+        value_two =value_two.next
+        #return the output list as ast
+    return output_list.__str__()
+
+
+
    
 
 
