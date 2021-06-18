@@ -58,9 +58,15 @@ class LinkedList:
      current =self.head
      output_string=""
      while current:
-         output_string +=f"{ {str(current.value)} } ->" # always str return a string
+         output_string +=f"{ {(current.value)} } ->" # always str return a string
          current=current.next
-     return output_string 
+
+
+            
+     else:
+        output_string = output_string + 'NULL'
+     return output_string
+    
 
      ######## code challange 6 ##########
     def append(self, value):
@@ -79,54 +85,48 @@ class LinkedList:
                 current=current.next
             current.next=node
 
-    def insert_before(self,value,new_value):
+    def insertBefore(self,value,new_value):
 
         """
         input                               arguments            output
         head -> [1] -> [3] -> [2] -> X   	3, 5	             head -> [1] -> [5] -> [3] -> [2] -> X
-
         this function will add new value befor spicific place
-
         """
         node = Node(new_value)
 
         current=self.head
 
-        if current.new_value == value:
+        if current.value == value:
             self.insert(new_value)
 
         else :
-            while current.next.new_value != value:
-                  current=current.next
+            while current.next.value != value:
+                current=current.next
 
             else:
 
                 node.next=current.next
                 current.next=node
+            return self.__str__()  
             
-    def insert_after(self, value, new_value):
+    def insertAfter(self, value, new_value):
 
         """
-
         input                                  arguments         output
         head -> [1] -> [3] -> [2] -> X      	3, 5	          head -> [1] -> [3] -> [5] -> [2] -> X
         
         this function will add new value after spicific place
-
         """
-        node =  Node(new_value)
+        current = self.head
+        node = Node(new_value)
+        while current != None:
+            if current.value == value:
+                break
+            current = current.next
 
-        current=self.head
-
-        while current:
-
-         if current.value == value:
-            node.next=current.next
-            current.next = node
-
-            break
-         current=current.next
-
+        node.next = current.next
+        current.next = node
+        return self.__str__()
 
  ######## code challange 8 ##########
 def zipLists(list1,list2):
