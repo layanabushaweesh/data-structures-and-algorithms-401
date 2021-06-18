@@ -20,7 +20,6 @@ class LinkedList:
         """
         this method to add element
         to head of the list
-
         """
         # Create a new Node
         node = Node(value) 
@@ -33,7 +32,6 @@ class LinkedList:
         Return T/F if value is in the linked list or not
         input value 
         output boolean
-
         """
         current =self.head
         while current != None:
@@ -53,20 +51,25 @@ class LinkedList:
         Loop over all nodes
         print all values in one line
         "{ a } -> { b } -> { c } -> NULL"
-
      """
      current =self.head
      output_string=""
      while current:
-         output_string +=f"{ {str(current.value)} } ->" # always str return a string
+         output_string +=f"{ {(current.value)} } ->" # always str return a string
          current=current.next
-     return output_string 
+
+
+            
+     else:
+        output_string = output_string + 'NULL'
+     return output_string
+
+
 
      ######## code challange 6 ##########
     def append(self, value):
         """
         Adds a node of a value to the 
-
         end of linked list
         """
         node =Node(value)
@@ -79,75 +82,77 @@ class LinkedList:
                 current=current.next
             current.next=node
 
-    def insert_before(self,value,new_value):
+    def insertBefore(self,value,new_value):
 
         """
         input                               arguments            output
         head -> [1] -> [3] -> [2] -> X   	3, 5	             head -> [1] -> [5] -> [3] -> [2] -> X
-
         this function will add new value befor spicific place
-
         """
         node = Node(new_value)
 
         current=self.head
 
-        if current.new_value == value:
+        if current.value == value:
             self.insert(new_value)
 
         else :
-            while current.next.new_value != value:
+            while current.next.value != value:
                   current=current.next
 
             else:
 
                 node.next=current.next
                 current.next=node
+            return self.__str__()  
             
-    def insert_after(self, value, new_value):
+    def insertAfter(self, value, new_value):
 
         """
-
         input                                  arguments         output
         head -> [1] -> [3] -> [2] -> X      	3, 5	          head -> [1] -> [3] -> [5] -> [2] -> X
         
         this function will add new value after spicific place
+        """
+        current = self.head
+        node = Node(new_value)
+        while current != None:
+            if current.value == value:
+                break
+            current = current.next
+
+        node.next = current.next
+        current.next = node
+        return self.__str__()
+
+        ######## code challange 7 ##########
+         
+    def kthFromEnd(self,k):
 
         """
-        node =  Node(new_value)
+        this function take a number, k, as a parameter
+        return the node value that is k from the end 
+        of the linked list.
 
-        current=self.head
-
+        """
+        if k<0:
+            return "can't be negative"
+        if type(k)!=type(1):
+            return 'should be numbers only'
+        
+        list=[]
+        current = self.head
         while current:
+            list+=[current.value]
+            
+            current=current.next
+        if k==0:
+            return list[-1]
+        else:
+            if k>=len(list):
+                return 'error'
+            return list[(k*-1)-1]
+        
 
-         if current.value == value:
-            node.next=current.next
-            current.next = node
 
-            break
-         current=current.next
-
-
-   
-
-
-
-if __name__ == "__main__":
-    ll = LinkedList()
-    # Instances of Node
-    n1 = Node(1)
-    n2 = Node(2)
-
-  
-# add lolo at the first node on head:
-    ll.insert('lolo')
-
-# add 9 at the end of list:
-    ll.append(9)
-
-# return true or fals if the value include in the list => should return true
-    ll.include(1)
-  
-
-# print all value in one line
-    print(ll.__str__())
+        
