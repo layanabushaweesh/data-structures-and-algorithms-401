@@ -58,9 +58,12 @@ class LinkedList:
      current =self.head
      output_string=""
      while current:
-         output_string +=f"{ {str(current.value)} } ->" # always str return a string
+         output_string +=f"{ {(current.value)} } ->" # always str return a string
          current=current.next
-     return output_string 
+     
+     else:
+            output_string = output_string + 'NULL'
+            return output_string
 
      ######## code challange 6 ##########
     def append(self, value):
@@ -79,7 +82,7 @@ class LinkedList:
                 current=current.next
             current.next=node
 
-    def insert_before(self,value,new_value):
+    def insertBefore(self,value,new_value):
 
         """
         input                               arguments            output
@@ -92,19 +95,20 @@ class LinkedList:
 
         current=self.head
 
-        if current.new_value == value:
+        if current.value == value:
             self.insert(new_value)
 
         else :
-            while current.next.new_value != value:
+            while current.next.value != value:
                   current=current.next
 
             else:
 
                 node.next=current.next
                 current.next=node
+            return self.__str__()  
             
-    def insert_after(self, value, new_value):
+    def insertAfter(self, value, new_value):
 
         """
 
@@ -114,19 +118,16 @@ class LinkedList:
         this function will add new value after spicific place
 
         """
-        node =  Node(new_value)
+        current = self.head
+        node = Node(new_value)
+        while current != None:
+            if current.value == value:
+                break
+            current = current.next
 
-        current=self.head
-
-        while current:
-
-         if current.value == value:
-            node.next=current.next
-            current.next = node
-
-            break
-         current=current.next
-
+        node.next = current.next
+        current.next = node
+        return self.__str__()
 
    
 
