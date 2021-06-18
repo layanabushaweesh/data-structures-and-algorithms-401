@@ -12,4 +12,4 @@
 
 6. [linked list-kth-from-end](https://github.com/layanabushaweesh/data-structures-and-algorithms-401/blob/main/DataStructures/linked_list/README.md)
 
-7. [Zip two linked lists ](https://github.com/layanabushaweesh/data-structures-and-algorithms-401/blob/main/Data-Structures/linked_list/READEM.md)
+7. [Zip two linked lists ](https://github.com/layanabushaweesh/data-structures-and-algorithms-401/blob/main/DataStructures/linkedlist/READEM.md)
