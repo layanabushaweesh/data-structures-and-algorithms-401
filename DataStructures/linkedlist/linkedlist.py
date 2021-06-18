@@ -60,10 +60,18 @@ class LinkedList:
      while current:
          output_string +=f"{ {(current.value)} } ->" # always str return a string
          current=current.next
+<<<<<<< HEAD:DataStructures/linkedlist/linkedlist.py
      
      else:
             output_string = output_string + 'NULL'
             return output_string
+=======
+            
+     else:
+        output_string = output_string + 'NULL'
+     return output_string
+
+>>>>>>> main:Data-Structures/linked_list/linkedlist.py
 
      ######## code challange 6 ##########
     def append(self, value):
@@ -128,6 +136,32 @@ class LinkedList:
         node.next = current.next
         current.next = node
         return self.__str__()
+
+ ######## code challange 8 ##########
+def zipLists(list1,list2):
+    
+    if not (list1 and list2) :
+        # check the list is exists
+        return list1 
+    
+    output_list =LinkedList()
+    #get the head of each list
+    value_one =list1.head
+    value_two =list2.head
+    #append value one the value two in a loop
+    while value_one:
+        output_list.append(value_one.value)
+        if value_two:
+            output_list.append(value_two.value)
+            value_two = value_two.next
+        value_one= value_one.next
+    while value_two :
+        output_list.append(value_two.value)
+        value_two =value_two.next
+        #return the output list as ast
+    return output_list.__str__()
+
+
 
    
 
