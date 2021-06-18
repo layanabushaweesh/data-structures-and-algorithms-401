@@ -20,6 +20,7 @@ class LinkedList:
         """
         this method to add element
         to head of the list
+
         """
         # Create a new Node
         node = Node(value) 
@@ -32,6 +33,7 @@ class LinkedList:
         Return T/F if value is in the linked list or not
         input value 
         output boolean
+
         """
         current =self.head
         while current != None:
@@ -51,6 +53,7 @@ class LinkedList:
         Loop over all nodes
         print all values in one line
         "{ a } -> { b } -> { c } -> NULL"
+
      """
      current =self.head
      output_string=""
@@ -63,6 +66,7 @@ class LinkedList:
      else:
         output_string = output_string + 'NULL'
      return output_string
+
 
 
 
@@ -98,7 +102,10 @@ class LinkedList:
 
         else :
             while current.next.value != value:
-                  current=current.next
+
+                current=current.next
+
+
 
             else:
 
@@ -124,8 +131,7 @@ class LinkedList:
         node.next = current.next
         current.next = node
         return self.__str__()
-
-        ######## code challange 7 ##########
+######## code challange 7 ##########
          
     def kthFromEnd(self,k):
 
@@ -155,4 +161,57 @@ class LinkedList:
         
 
 
+
+ ######## code challange 8 ##########
+def zipLists(list1,list2):
+    
+    if not (list1 and list2) :
+        # check the list is exists
+        return list1 
+    
+    output_list =LinkedList()
+    #get the head of each list
+    value_one =list1.head
+    value_two =list2.head
+    #append value one the value two in a loop
+    while value_one:
+        output_list.append(value_one.value)
+        if value_two:
+            output_list.append(value_two.value)
+            value_two = value_two.next
+        value_one= value_one.next
+    while value_two :
+        output_list.append(value_two.value)
+        value_two =value_two.next
+        #return the output list as ast
+    return output_list.__str__()
+
+
+
+   
+
+
+
+if __name__ == "__main__":
+    ll = LinkedList()
+    # Instances of Node
+    n1 = Node(1)
+    n2 = Node(2)
+
+  
+# add lolo at the first node on head:
+    ll.insert('lolo')
+
+# add 9 at the end of list:
+    ll.append(9)
+
+# return true or fals if the value include in the list => should return true
+    ll.include(1)
+  
+
+# print all value in one line
+    print(ll.__str__())
+
+
         
+

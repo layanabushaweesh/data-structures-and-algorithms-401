@@ -69,6 +69,8 @@ class LinkedList:
 
 
 
+
+
      ######## code challange 6 ##########
     def append(self, value):
         """
@@ -91,9 +93,7 @@ class LinkedList:
         """
         input                               arguments            output
         head -> [1] -> [3] -> [2] -> X   	3, 5	             head -> [1] -> [5] -> [3] -> [2] -> X
-
         this function will add new value befor spicific place
-
         """
         node = Node(new_value)
 
@@ -104,7 +104,9 @@ class LinkedList:
 
         else :
             while current.next.value != value:
+
                   current=current.next
+
 
             else:
 
@@ -115,12 +117,10 @@ class LinkedList:
     def insertAfter(self, value, new_value):
 
         """
-
         input                                  arguments         output
         head -> [1] -> [3] -> [2] -> X      	3, 5	          head -> [1] -> [3] -> [5] -> [2] -> X
         
         this function will add new value after spicific place
-
         """
         current = self.head
         node = Node(new_value)
@@ -134,28 +134,28 @@ class LinkedList:
         return self.__str__()
 
  ######## code challange 8 ##########
-def zipLists(list1,list2):
-    
-    if not (list1 and list2) :
-        # check the list is exists
-        return list1 
-    
-    output_list =LinkedList()
-    #get the head of each list
-    value_one =list1.head
-    value_two =list2.head
-    #append value one the value two in a loop
-    while value_one:
-        output_list.append(value_one.value)
-        if value_two:
+    def zipLists(list1,list2):
+        
+        if not (list1 and list2) :
+            # check the list is exists
+            return list1 
+        
+        output_list =LinkedList()
+        #get the head of each list
+        value_one =list1.head
+        value_two =list2.head
+        #append value one the value two in a loop
+        while value_one:
+            output_list.append(value_one.value)
+            if value_two:
+                output_list.append(value_two.value)
+                value_two = value_two.next
+            value_one= value_one.next
+        while value_two :
             output_list.append(value_two.value)
-            value_two = value_two.next
-        value_one= value_one.next
-    while value_two :
-        output_list.append(value_two.value)
-        value_two =value_two.next
-        #return the output list as ast
-    return output_list.__str__()
+            value_two =value_two.next
+            #return the output list as ast
+        return output_list.__str__()
 
 
 

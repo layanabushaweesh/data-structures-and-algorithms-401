@@ -1,4 +1,6 @@
-from DataStructures.linked_list.linkedlist import LinkedList
+
+from DataStructures.linked_list.linkedlist import LinkedList , zipLists
+
 
 def test_append_1():  
     ll = LinkedList()
@@ -39,7 +41,6 @@ def test_str():
 
 ######## code challange 6 ##########
 
-def test_append_2():  
     ll = LinkedList()
     ll.append(2)
     assert ll.head.value == 2
@@ -114,12 +115,10 @@ def test_insertafter_first():
     ll.insert('lelia')
     actual = ll.insertAfter('lelia', 'madleen')
     excepted = "{'lelia'} ->{'madleen'} ->{'layan'} ->{'lelian'} ->{'leen'} ->NULL"
+
     assert actual == excepted
 
-
-
-    
-######## code challange 7 ##########
+    ######## code challange 7 ##########
 def test_k_greater_than_linked_list():
     ll = LinkedList()
     ll.append(1)
@@ -160,3 +159,65 @@ def test_k__path():
     actual = ll.kthFromEnd(2)
     expected=2
     assert actual==expected
+
+
+        
+######## code challange 8 ##########
+
+
+def test_zipLists_1(): 
+    list1 = LinkedList() 
+    list1.append(1) 
+    list1.append(2) 
+   
+    list2 = LinkedList() 
+    list2.append(4) 
+    list2.append(5) 
+    
+    assert zipLists(list1,list2) == "{1} ->{4} ->{2} ->{5} ->NULL"
+
+
+
+
+def test_zipLists_2(): 
+    list1 = LinkedList() 
+    list1.append(1) 
+    list1.append(2) 
+  
+ 
+    list2 = LinkedList() 
+    list2.append('a') 
+    list2.append('b') 
+    list2.append('c')
+
+    assert zipLists(list1,list2) == "{1} ->{'a'} ->{2} ->{'b'} ->{'c'} ->NULL"
+
+def test_zipLists_3(): 
+    list1 = LinkedList() 
+    list1.append('layan') 
+    list1.append('lelian')
+    list1.append('laila') 
+  
+ 
+    list2 = LinkedList() 
+    list2.append('madline') 
+    list2.append('lili') 
+    
+
+    assert zipLists(list1,list2) == "{'layan'} ->{'madline'} ->{'lelian'} ->{'lili'} ->{'laila'} ->NULL"
+
+def test_zipLists_4(): 
+    list1 = LinkedList() 
+    list1.insert(9) 
+    list1.append(2) 
+   
+    list2 = LinkedList() 
+    list2.append(4) 
+    list2.append(5) 
+    
+    assert zipLists(list1,list2) == "{9} ->{4} ->{2} ->{5} ->NULL"
+
+
+
+
+    
