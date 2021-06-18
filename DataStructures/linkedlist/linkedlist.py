@@ -70,10 +70,12 @@ class LinkedList:
 
 
 
+
      ######## code challange 6 ##########
     def append(self, value):
         """
         Adds a node of a value to the 
+
         end of linked list
         """
         node =Node(value)
@@ -103,8 +105,7 @@ class LinkedList:
         else :
             while current.next.value != value:
 
-                current=current.next
-
+                  current=current.next
 
 
             else:
@@ -131,60 +132,30 @@ class LinkedList:
         node.next = current.next
         current.next = node
         return self.__str__()
-######## code challange 7 ##########
-         
-    def kthFromEnd(self,k):
-
-        """
-        this function take a number, k, as a parameter
-        return the node value that is k from the end 
-        of the linked list.
-
-        """
-        if k<0:
-            return "can't be negative"
-        if type(k)!=type(1):
-            return 'should be numbers only'
-        
-        list=[]
-        current = self.head
-        while current:
-            list+=[current.value]
-            
-            current=current.next
-        if k==0:
-            return list[-1]
-        else:
-            if k>=len(list):
-                return 'error'
-            return list[(k*-1)-1]
-        
-
-
 
  ######## code challange 8 ##########
-def zipLists(list1,list2):
-    
-    if not (list1 and list2) :
-        # check the list is exists
-        return list1 
-    
-    output_list =LinkedList()
-    #get the head of each list
-    value_one =list1.head
-    value_two =list2.head
-    #append value one the value two in a loop
-    while value_one:
-        output_list.append(value_one.value)
-        if value_two:
+    def zipLists(list1,list2):
+        
+        if not (list1 and list2) :
+            # check the list is exists
+            return list1 
+        
+        output_list =LinkedList()
+        #get the head of each list
+        value_one =list1.head
+        value_two =list2.head
+        #append value one the value two in a loop
+        while value_one:
+            output_list.append(value_one.value)
+            if value_two:
+                output_list.append(value_two.value)
+                value_two = value_two.next
+            value_one= value_one.next
+        while value_two :
             output_list.append(value_two.value)
-            value_two = value_two.next
-        value_one= value_one.next
-    while value_two :
-        output_list.append(value_two.value)
-        value_two =value_two.next
-        #return the output list as ast
-    return output_list.__str__()
+            value_two =value_two.next
+            #return the output list as ast
+        return output_list.__str__()
 
 
 
@@ -211,7 +182,3 @@ if __name__ == "__main__":
 
 # print all value in one line
     print(ll.__str__())
-
-
-        
-
