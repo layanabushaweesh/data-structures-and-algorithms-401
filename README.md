@@ -8,7 +8,7 @@
 
 4. [linked list](https://github.com/layanabushaweesh/data-structures-and-algorithms-401/blob/main/Data-Structures/linked_list/READEME.md)
 
-5. [linked list insertions](https://github.com/layanabushaweesh/data-structures-and-algorithms-401/blob/main/Data-Structures/linked_list/READEME.md)
+5. [linked list insertions](https://github.com/layanabushaweesh/data-structures-and-algorithms-401/blob/main/DataStructures/linkedlist/README.md)
 
 6. [linked list-kth-from-end](https://github.com/layanabushaweesh/data-structures-and-algorithms-401/blob/main/Data-Structures/ll-kth-from-end/README.md)
 

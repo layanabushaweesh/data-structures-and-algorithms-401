@@ -60,18 +60,14 @@ class LinkedList:
      while current:
          output_string +=f"{ {(current.value)} } ->" # always str return a string
          current=current.next
-<<<<<<< HEAD:DataStructures/linkedlist/linkedlist.py
-     
-     else:
-            output_string = output_string + 'NULL'
-            return output_string
-=======
+
+
             
      else:
         output_string = output_string + 'NULL'
      return output_string
 
->>>>>>> main:Data-Structures/linked_list/linkedlist.py
+
 
      ######## code challange 6 ##########
     def append(self, value):
