@@ -58,9 +58,13 @@ class LinkedList:
      current =self.head
      output_string=""
      while current:
-         output_string +=f"{ {str(current.value)} } ->" # always str return a string
+         output_string +=f"{ {(current.value)} } ->" # always str return a string
          current=current.next
-     return output_string 
+            
+     else:
+        output_string = output_string + 'NULL'
+     return output_string
+
 
      
     def append(self, value):
