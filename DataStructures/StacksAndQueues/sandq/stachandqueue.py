@@ -65,6 +65,23 @@ class Stack:
           """
           return True if self.top is None else False
 
+    def __str__ (self):
+
+        """
+        this method will 
+        Loop over all nodes
+        print all values in one line
+        "{ a } -> { b } -> { c } -> NULL"
+        """
+        output_string=""
+        current = self.top
+        while current:
+         output_string +=f"{ {(current.value)} } ->" # always str return a string
+         current=current.next    
+        else:
+         output_string = output_string + 'NULL'
+        return output_string
+
 
 #Create a Queue class that has a front property. It creates an empty Queue when instantiated.
 class Queue:
@@ -133,3 +150,46 @@ class Queue:
         or not the queue is empty.
         """
         return True if self.front is None else False
+
+#### code challange 11 #####
+#Create a brand new PseudoQueue class , will internally only utilize 2 Stack objects
+class Pseudo_Queue():
+    def __init__(self):
+        self.stack1 = Stack()
+        self.stack2 = Stack()
+
+    def enqueue(self,value):
+
+        """
+        this method
+        which inserts value into the PseudoQueue
+
+        """
+        return self.stack1.push(value).__str__
+        
+
+    def dequeue(self):
+
+        """
+        this method
+        which extracts a value from the PseudoQueue
+
+        """
+        
+        stack = Stack()
+      # revers the stack
+        while self.stack.top:   
+            stack.push(self.stack.pop())
+     # remove the Top
+        output = stack.pop()  
+
+        while stack.top:
+            self.enqueue(stack.pop())
+
+        return output.__str__
+
+    def __str__(self):
+
+        return str(self.stack)
+        # return str(self.stack2)
+
