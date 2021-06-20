@@ -1,10 +1,13 @@
-from DataStructures.StacksAndQueues.sandq.stachandqueue import Stack , Queue
-
+from re import M
+from DataStructures.StacksAndQueues.sandq.stachandqueue import Stack , Queue  
+from DataStructures.StacksAndQueues.sandq.stachandqueue import Pseudo_Queue
 from inspect import stack
 import pytest
 
 
 # stack tests
+
+
 
 def test_1(stack_vals):  
     actual = stack_vals.peek()
@@ -107,3 +110,18 @@ def queue_valus():
     queue.enqueue('leen')
  
     return queue
+
+####cc 11####
+def test_pesodu_empty():
+    excepted=5
+    queue=Pseudo_Queue.enqueue.value=5
+    actuall=queue
+    assert excepted == actuall
+
+# def test_pesodu(stack_vals):
+#     excepted=5
+    
+#     actuall=Pseudo_Queue.dequeue
+#     assert excepted == actuall
+
+    
