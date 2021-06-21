@@ -17,3 +17,6 @@
 8. [Stacks and Queues ](https://github.com/layanabushaweesh/data-structures-and-algorithms-401/blob/main/DataStructures/StacksAndQueues/READEME.md)
 
 9. [PseudoQueue](https://github.com/layanabushaweesh/data-structures-and-algorithms-401/blob/main/DataStructures/StacksAndQueues/README.md)
+
+
+10. [fifo_animal_shelter](https://github.com/layanabushaweesh/data-structures-and-algorithms-401/blob/main/DataStructures/fifoanimalshelter/README.md)
