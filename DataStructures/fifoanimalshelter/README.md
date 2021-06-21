@@ -6,7 +6,7 @@ enqueue(animal): adds animal to the shelter. animal can be either a dog or a cat
 dequeue(pref): returns either a dog or a cat. If pref is not "dog" or "cat" then return null.
 ## Whiteboard Process
 <!-- Embedded whiteboard image -->
-[whiteboard] (whiteboard.md)
+[whiteboard](fifoanimal.md)
 ## Approach & Efficiency
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
 Big O :
