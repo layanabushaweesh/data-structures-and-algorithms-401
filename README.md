@@ -20,3 +20,6 @@
 
 
 10. [fifo_animal_shelter](https://github.com/layanabushaweesh/data-structures-and-algorithms-401/blob/main/DataStructures/fifoanimalshelter/README.md)
+
+
+11. [multi_bracket_validation](https://github.com/layanabushaweesh/data-structures-and-algorithms-401/blob/main/challanges/multi_bracket_validation/README.md)
