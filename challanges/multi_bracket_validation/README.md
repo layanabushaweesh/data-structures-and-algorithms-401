@@ -10,7 +10,5 @@ in the string are balanced.
 
 ## Approach & Efficiency
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
-Big O :
-time : O(1)
-space : O(1)
+Big O = o(n^2)
 
