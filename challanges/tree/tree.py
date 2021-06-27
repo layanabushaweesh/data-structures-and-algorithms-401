@@ -16,6 +16,7 @@ class Node:
 class Tree:
     def __init__(self):
         self.root = None
+        
         # as the top of stack
     def pre_order(self):
 
@@ -100,6 +101,32 @@ class Tree:
             return output
         except:
             "ther is an error in post_order method"
+
+    #####code challange 16 ###### 
+
+    def max_value(self):
+
+        """
+        this method will return the max value in numeric tree
+
+        """
+        # check if the tree is empty
+        if not self.root:
+            return "trss is empty "
+        max_val=self.root.value
+        
+        def max(node):
+            nonlocal max_val
+
+            if node is None:
+                return "error"
+            if node.value > max_val:
+              max_val=node.value
+
+            max(node.left)
+            max(node.right)
+        max(self.root)
+        return max_val
 
 #Create a Binary Search Tree class which is inherit from tree class we use super to customize the original class.
 
