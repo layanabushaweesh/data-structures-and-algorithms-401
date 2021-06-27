@@ -28,6 +28,27 @@ def test_Binary_Search_Tree_contain(binery):
 def test_Binary_Search_Tree_add(binery):
     assert binery.pre_order() == '1234567'
     assert binery.post_order() == '7654321'
+  
+
+
+
+###code challange 16 ####
+
+def test_max_value_1():
+    tree = BinarySearchTree()
+    tree.add(5)
+    tree.add(10)
+    tree.add(15)
+
+    assert tree.max_value() == 15
+
+def test_max_value_2():
+    tree = BinarySearchTree()
+    tree.add(20)
+    tree.add(25)
+    tree.add(30)
+
+    assert tree.max_value() == 30
 
 
 
