@@ -25,3 +25,5 @@
 11. [multi_bracket_validation](https://github.com/layanabushaweesh/data-structures-and-algorithms-401/blob/main/challanges/multi_bracket_validation/README.md)
 
 12. [Trees](https://github.com/layanabushaweesh/data-structures-and-algorithms-401/blob/main/challanges/tree/READEME.md)
+
+13. [Max Value in  a Tree](https://github.com/layanabushaweesh/data-structures-and-algorithms-401/blob/main/challanges/tree/readme.MD)
