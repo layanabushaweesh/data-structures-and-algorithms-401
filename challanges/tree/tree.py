@@ -128,6 +128,33 @@ class Tree:
         max(self.root)
         return max_val
 
+
+    #####code challange 17 ###### 
+
+    def breadth_first(self): 
+        if not self.root :
+            return "sory empyt tree"
+
+        output=[]
+        Queue = []    
+        Queue=Queue+[self.root]
+
+        while Queue : 
+            current = Queue[0]
+            if current.left: 
+                Queue+=[current.left]
+            if current.right: 
+                Queue+=[current.right]
+            
+           
+
+            output = output+[Queue.pop(0).value]
+
+        
+        return output    
+
+            
+
 #Create a Binary Search Tree class which is inherit from tree class we use super to customize the original class.
 
 class BinarySearchTree(Tree):
