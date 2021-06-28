@@ -50,6 +50,16 @@ def test_max_value_2():
 
     assert tree.max_value() == 30
 
+###code challange 17 ####
+
+def test_breadthFirst_0():
+    
+    new_tree = Tree()
+    assert new_tree.breadth_first() == "sory empyt tree"
+
+def test_breadthFirst(prepared_tree):
+    
+    assert prepared_tree.breadth_first() == ['l', 'i', 'y', 'a', 'n']
 
 
 @pytest.fixture
