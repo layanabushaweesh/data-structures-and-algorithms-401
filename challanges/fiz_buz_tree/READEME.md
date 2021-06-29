@@ -12,7 +12,7 @@ Determine whether or not the value of each node is divisible by 3, 5 or both. Cr
 
 ## Whiteboard Process
 <!-- Embedded whiteboard image -->
-![image](FIZBUZ.png)
+![image](fizbz.png)
 ## Approach & Efficiency
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
 Big O :
