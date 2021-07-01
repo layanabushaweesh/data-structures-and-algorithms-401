@@ -5,7 +5,7 @@ Find the Maximum Value in a Binary Tree
 
 ## Whiteboard Process
 <!-- Embedded whiteboard image -->
-[whiteboard](maxvalue.md)
+![whiteboard](cc.png)
 
 
 ## Approach & Efficiency
