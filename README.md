@@ -33,3 +33,5 @@
 15. [fiz_buz_tree](https://github.com/layanabushaweesh/data-structures-and-algorithms-401/blob/main/challanges/fiz_buz_tree/READEME.md)
 
 16. [Insertion Sort](https://github.com/layanabushaweesh/data-structures-and-algorithms-401/blob/main/challanges/insertion_sort/README.md)
+
+17. [Merge Sort](https://github.com/layanabushaweesh/data-structures-and-algorithms-401/blob/main/challanges/merge_sort/README.md)
