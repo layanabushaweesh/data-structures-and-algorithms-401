@@ -19,10 +19,17 @@ InsertionSort(int[] arr)
 
 ## Trace the code:
 
- ![image](trace.png)
+sample array [8,4,23,42,16,15]
 
+ ![image](1.png)
 
-## Efficency:
+ ![image](2.png)
 
-Time: O(n^2)
-Space: O(1)
+ ![image](33.png)
+
+ ![image](4.png)
+
+ ![image](5.png)
+
+so the output array will be [4,8,15,16,23,42] sorted from lowest number to highest number by insertion sort method
+
