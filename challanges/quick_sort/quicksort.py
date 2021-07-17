@@ -6,6 +6,8 @@ def QuickSort(arr, left, right):
         QuickSort(arr, left, position - 1)
         QuickSort(arr, position + 1, right)
 
+    return arr
+
 def Partition(arr, left, right):
     #set a pivot value as a point of reference
     pivot = arr[right]
@@ -15,16 +17,20 @@ def Partition(arr, left, right):
         if arr[i] <= pivot:
             low=1+low
             Swap(arr, i, low)
+
     #place the value of the pivot location in the middle.
     #all numbers smaller than the pivot are on the left, larger on the right.
     Swap(arr, right, low + 1)
+
     return low + 1
+
 
 def Swap(arr, i, low):
     temp = arr[i]
     arr[i] = arr[low]
     arr[low] = temp
-
+    
+    return arr
 
 
 
