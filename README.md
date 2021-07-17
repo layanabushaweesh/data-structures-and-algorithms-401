@@ -37,3 +37,5 @@
 17. [Merge Sort](https://github.com/layanabushaweesh/data-structures-and-algorithms-401/blob/main/challanges/merge_sort/README.md)
 
 17. [Quick Sort](https://github.com/layanabushaweesh/data-structures-and-algorithms-401/blob/main/challanges/quick_sort/README.MD)
+
+18. [Hash Table](https://github.com/layanabushaweesh/data-structures-and-algorithms-401/blob/main/challanges/hash_table/README.md)
