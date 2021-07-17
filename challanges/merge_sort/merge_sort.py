@@ -41,3 +41,4 @@ def Merge(left, right, array):
             array[k] = right[j]
             k += 1
             j += 1
+    return array
