@@ -40,4 +40,4 @@
 
 18. [Hash Table](https://github.com/layanabushaweesh/data-structures-and-algorithms-401/blob/main/challanges/hash_table/README.md)
 
-19. [Hashmap-Repeated-Word](https://github.com/layanabushaweesh/data-structures-and-algorithms-401/blob/hashmap-repeated-word/challanges/hashmap_repeated_word/README.md)
+19. [Hashmap-Repeated-Word](https://github.com/layanabushaweesh/data-structures-and-algorithms-401/blob/main/challanges/hashmap_repeated_word/README.md)
