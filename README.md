@@ -41,3 +41,5 @@
 18. [Hash Table](https://github.com/layanabushaweesh/data-structures-and-algorithms-401/blob/main/challanges/hash_table/README.md)
 
 19. [Hashmap-Repeated-Word](https://github.com/layanabushaweesh/data-structures-and-algorithms-401/blob/main/challanges/hashmap_repeated_word/README.md)
+
+20. [Hashmap Tree Intersection](https://github.com/layanabushaweesh/data-structures-and-algorithms-401/blob/main/challanges/hashmap_tree_intersection/README.md)
