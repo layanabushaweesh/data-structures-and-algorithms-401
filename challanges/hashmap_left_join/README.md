@@ -5,7 +5,7 @@ with the values for the right hash tables if they have the same key.
 
 ## Whiteboard
 
-![image](Untitled.png)
+![image](Untitled.jpg)
 
 ## Challenge
 
