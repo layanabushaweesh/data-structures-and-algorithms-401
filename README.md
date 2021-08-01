@@ -45,3 +45,6 @@
 20. [Hashmap Tree Intersection](https://github.com/layanabushaweesh/data-structures-and-algorithms-401/blob/main/challanges/hashmap_tree_intersection/README.md)
 
 21. [Hashmap Left Join](https://github.com/layanabushaweesh/data-structures-and-algorithms-401/blob/main/challanges/hashmap_left_join/README.md)
+
+
+22. [Graph](https://github.com/layanabushaweesh/data-structures-and-algorithms-401/blob/main/DataStructures/graph/README.md)
