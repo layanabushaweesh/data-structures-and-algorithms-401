@@ -23,9 +23,11 @@ def test_all_cases():
            ['fond',
             'enamored',
             'averse'],
+
            ['diligent',
             'employed',
             'idle'],
+            
            ['wrath',
             'anger',
             'delight'],
